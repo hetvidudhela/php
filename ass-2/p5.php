@@ -1,26 +1,34 @@
 <?php
-
-/*
-        WAP to check whether the no. is positive, negative or zero? (Using if else ladder)
+/* WAP to check whether the no. is divisible by 2, 3, 5 or not? (Using nested if)
 
 */
 error_reporting(0);
-
     $a=$_POST["no"];
-    if($a>0)
-    {
-        $ans="$a is positive num";
-
+    if($a%2==0)
+    {   
+        $ans="$a is divisible by 2";
+        if($a%3==0)
+        {
+            $ans="$a is divisible by 2,3";
+            if ($a%5==0)
+            {
+                $ans="$a is divisible by 2,3,5";
+            }
+       
+        }
+       
     }
-    else if($a==0)
+    elseif($a%3==0&& $a%5==0)
     {
-        $ans="num is zero";
+        $ans="$a is divisible by 3,5";
+    }
+    elseif($a%3==0)
+    {
+        $ans="$a is divisible by 3";
     }
     else{
-        $ans="$a is negative num";
+        $ans="$a is divisible by 5";
     }
-    
-
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +42,7 @@ error_reporting(0);
     <form action=" " method="POST">
         <table border="1" align="center">
             <tr>
-                    <th colspan="2" align="center">find num is pos or negative </th>
+                    <th colspan="2" align="center">findout num is divisible by 2,3 or 5 </th>
             </tr>
 
             <tr>

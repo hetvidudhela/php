@@ -28,7 +28,7 @@ error_reporting(0);
     <form action=" " method="POST">
         <table border="1" align="center">
             <tr>
-                    <th colspan="2" align="center">find num is odd or even </th>
+                    <th colspan="2" align="center">findout entered year is leap or not  </th>
             </tr>
 
             <tr>
