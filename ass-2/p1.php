@@ -1,3 +1,8 @@
+/*
+                write a program to enter two number and check which number is maximum and minimum
+
+*/
+
 <?php
 error_reporting(0);
     $a=$_POST["no1"];
