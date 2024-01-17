@@ -1,4 +1,8 @@
 <?php
+/*
+            write a program to enter any one year and check this year is leap year or not.
+
+*/
 error_reporting(0);
         $a=$_POST["year"];
         if($a%4==0)
