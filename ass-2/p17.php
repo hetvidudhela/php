@@ -43,11 +43,11 @@ error_reporting(0);
             </tr>
             <tr>
                 <td>USERNAME</td>
-                <td><input type="text" name="username" id="101" value=" "></td>
+                <td><input type="text" name="username" id="101" value=" <?php echo $username;?> "></td>
             </tr>
             <tr>
                 <td>PASSWORD</td>
-                <td><input type="password" name="password" id="102" value=""></td>
+                <td><input type="password" name="password" id="102" value="<?php echo $password;?>"></td>
             </tr>
             <tr>
                 <td colspan="2" align="center"><input type="submit" value="LOGIN" name="login"></td>

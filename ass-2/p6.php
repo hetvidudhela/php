@@ -1,4 +1,7 @@
 <?php
+    /* WAP to initialize three numbers and find out the max. And min. numbers out of these. (Using nested if
+else)*/
+
 error_reporting(0);
     extract($_POST);
     if(isset($_POST["max"]))

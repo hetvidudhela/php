@@ -1,4 +1,7 @@
 <?php
+
+/*WAP to display the grades on mark sheet. (Using if else ladder)*/
+
 error_reporting(0);
     $per=$_POST["per"];
     $ans=$_POST["ans"];
