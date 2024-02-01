@@ -1,4 +1,12 @@
 <?php
+/*
+        write a php program to enter username and password. If user enter wrong username then
+        display error message as username is wrong, please try again. If user enter wrong password than
+        display error message as your password is wrong. If User enters wrong username and password than
+        display error message as your username and password are wrong please try again and if both
+        username and password entered are correct than display message “welcome to the ssccs”.
+*/
+
 error_reporting(0);
     $username=$_POST["username"];
     $password=$_POST["password"];
