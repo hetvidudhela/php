@@ -11,6 +11,25 @@
     if(isset($_POST["calc"]))
     {
         $ans=$item_qty*$item_price;
+        if($ans>15000)
+        {
+            $dis=$ans*20/100;
+            $net=$ans-$dis;
+        }
+        elseif($ans>10000)
+        {
+            $dis=$ans*15/100;
+            $net=$ans-$dis;
+        }
+        elseif($ans>5000)
+        {
+           $dis=$ans*10/100;
+            $net=$ans-$dis;
+        }
+        else
+        {
+            $net=$ans;
+        }
     }
 
 ?>
@@ -46,9 +65,11 @@
             <tr>
                 <td colspan="2" align="center"><input type="submit" value="calc" name="calc"></td>
             </tr>
+            
+
             <tr>
                 <td>net amount is</td>
-                <td><input type="text" name="ans" value="<?php echo $ans; ?>"></td>
+                <td><input type="text" name="$net" value="<?php echo $net;?>"></td>
             </tr>
         </table>
     </form>
