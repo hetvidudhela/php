@@ -1,4 +1,6 @@
 <?php
+        /*    wap to create one multiple choice Question. If user click any wrong ans then print message your
+            answer is wrong. User click on write answer then print your answer is correct.*/
 error_reporting(0);
 $city=$_POST["city"];
 if(isset($_POST["answer"]))
