@@ -1,4 +1,8 @@
 <?php
+
+           /*     write a program to enter any two value and create choice-based operation using radio button.
+                Create 4 Radio button name Addition, subtraction, multiplication and division.
+                Perform Arithmetic operation using choice-based operation. (using simple if condition).*/
     error_reporting(0);
     extract($_POST);
     
@@ -26,7 +30,6 @@
             break;
 
         }
-        echo $ans;
     }
 ?>
 <!DOCTYPE html>
